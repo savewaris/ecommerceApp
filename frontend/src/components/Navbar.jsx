@@ -9,9 +9,30 @@ const Navbar = () => {
           <img src={assets.logo} className='w-36' alt="" />
           
           <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
-              <NaLink className=' flex flex-col itemscenter gap-1'>
-                  
-              </NaLink>
+              <NavLink to='/' className=' flex flex-col itemscenter gap-1'>
+                  <p>HOME</p>
+                    <div className='flex justify-center'>
+                        <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+                    </div>
+              </NavLink>
+              <NavLink to='/collection' className=' flex flex-col itemscenter gap-1'>
+                  <p>COLLECTION</p>
+                    <div className='flex justify-center'>
+                        <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+                    </div>
+              </NavLink>
+              <NavLink to='/about' className=' flex flex-col itemscenter gap-1'>
+                  <p>ABOUT</p>
+                    <div className='flex justify-center'>
+                        <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+                    </div>
+              </NavLink>
+              <NavLink to='/contact' className=' flex flex-col itemscenter gap-1'>
+                  <p>CONTACT</p>
+                    <div className='flex justify-center'>
+                        <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+                    </div>
+              </NavLink>
           </ul>
     </div>
   )
